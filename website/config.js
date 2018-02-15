@@ -1,4 +1,4 @@
-var api = "http://127.0.0.1:1117";
+var api = "https://testnet.coinmine.network/api";
 var coinUnits = 1000000000000;
 var poolHost = "Coinmine.network";
 
