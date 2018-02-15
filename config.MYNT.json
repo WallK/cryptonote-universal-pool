@@ -22,17 +22,19 @@
         "poolAddress": "XSwVkm6aNxF5561yAeAssYZijk5op57G342vdniS7zYBB5tMtJci9pCAfw6wsGNwopHHoDRLfZNA5BbAw8xjHYfW2jaA2VBPs",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
+        "sslKey": "apache-selfsigned.key",
+        "sslCert": "apache-selfsigned.crt",
         "ports": [
             {
                 "port": 443,
                 "difficulty": 100000,
-                "desc": "SSL",
+                "desc": "BASIC SSL",
                 "type": "SSL"
             },
             {
                 "port": 1111,
-                "difficulty": 25000,
-                "desc": "High end hardware"
+                "difficulty": 15000,
+                "desc": "Javascript Web Miners"
             },
             {
                 "port": 3333,
@@ -40,9 +42,21 @@
                 "desc": "Low end hardware"
             },
             {
+                "port": 4444,
+                "difficulty": 25000,
+                "desc": "Low end hardware (SSL protected)",
+                "type": "SSL"
+            },
+            {
                 "port": 5555,
                 "difficulty": 50000,
                 "desc": "Mid range hardware"
+            },
+            {
+                "port": 6666,
+                "difficulty": 50000,
+                "desc": "Mid range hardware (SSL protected)",
+                "type": "SSL"
             },
             {
                 "port": 7777,
@@ -50,7 +64,18 @@
                 "desc": "High end hardware"
             },
             {
-                "port": 2222,
+                "port": 8888,
+                "difficulty": 200000,
+                "desc": "High end hardware (SSL protected)",
+                "type": "SSL"
+            },
+            {
+                "port": 6423,
+                "difficulty": 500000,
+                "desc": "NiceHash port"
+            }
+            {
+                "port": 30000,
                 "difficulty": 30000,
                 "desc": "Hidden port",
                 "hidden": true
